@@ -387,7 +387,7 @@
         <!-- Feature Section End -->
 
 
-        <!-- Newsletter Section Start -->
+        <!-- Newsletter Section Start
         <div class="newsletter-section">
             <div class="container">
                 <div class="newsletter-area">
@@ -409,8 +409,28 @@
         </div>
         <!-- Newsletter Section End -->
 
-        <!-- Newsletter Script Start -->
-        <script>
+        <!-- Newsletter v2 form-->
+            <div class="newsletter-section">
+                <div class="container">
+                    <div class="newsletter-area">
+                        <h2>Subscribe Our Newsletter</h2>
+                        <div class="col-lg-6 offset-lg-3 p-0">
+                        <form id="emailForm" class="newsletter-form2">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+                            <button type="submit" class="default-btn electronics-btn">Submit</button>
+                        </form>
+                    </div>
+                    <img src="assets/img/shapes/2.png" class="subscribe-shape" alt="shape">
+                    <div id="successMessage" style="display:none; color:green;">
+                        Thank you! Your email has been submitted successfully.
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+
+            
+            <script>
             document.getElementById('emailForm').addEventListener('submit', function(event) {
                 event.preventDefault();
                 
@@ -422,14 +442,20 @@
                 })
                 .then(response => response.text())
                 .then(data => {
-                    console.log('Success:', data);
+                    if (data === "Success") {
+                        document.getElementById('successMessage').style.display = 'block';
+                        document.getElementById('emailForm').reset();
+                    } else {
+                        alert('An error occurred. Please try again.');
+                    }
                 })
                 .catch((error) => {
                     console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
                 });
             });
             </script>
-            <!-- Newsletter Script Ends -->
+        <!-- Newsletter V2 ends-->
 
 
 

@@ -1661,6 +1661,56 @@ h3 {
   line-height: 1;
 }
 
+
+.newsletter-section .newsletter-area .newsletter-form2 {
+  position: relative;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 .form-control {
+  border: 1px solid #FFFFFF;
+  padding: 20px 0 20px 20px;
+  height: 50px;
+  background: #ff7309 !important;
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 ::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 :-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 ::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 ::placeholder {
+  color: #FFFFFF;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 .default-btn {
+  position: absolute;
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 50px;
+  padding: 0 20px;
+  top: 0px;
+  right: -1px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-left: 1px solid;
+  background: #ff7309;
+  border: 1px solid;
+}
+
+.newsletter-section .newsletter-area .newsletter-form2 .default-btn:hover {
+  color: #FFFFFF;
+  background: #000;
+}
+
 .newsletter-section .newsletter-area .newsletter-form {
   position: relative;
 }
